@@ -21,7 +21,7 @@ export async function middleware(req){
   }),headers:{"content-type":"application/json"},method:"POST"})
   if(source){
     // Return the image.
-    return NextResponse.rewrite(new URL("/mewww.gif",req.url))
+    return NextResponse.rewrite(new URL("/mewing.gif",req.url))
   }else{
     // Make a message for whoever takes the risk to directly click.
     return NextResponse.rewrite(new URL("https://google.com",req.url));
