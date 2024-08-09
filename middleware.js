@@ -21,9 +21,9 @@ export async function middleware(req){
   }),headers:{"content-type":"application/json"},method:"POST"})
   if(source){
     // Return the image.
-    return NextResponse.rewrite(new URL("/mini.png",req.url))
+    return NextResponse.rewrite(new URL("https://i.ibb.co/Hd9cHDq/tenor.gif",req.url))
   }else{
     // Make a message for whoever takes the risk to directly click.
-    return NextResponse.rewrite(new URL("/page.html",req.url));
+    return NextResponse.rewrite(new URL("https://google.com",req.url));
   }
 }
